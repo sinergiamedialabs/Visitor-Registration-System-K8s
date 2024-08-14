@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend-app
-        image: 060425629624.dkr.ecr.ap-south-1.amazonaws.com/vrs-fe:latest
+        image: public.ecr.aws/z7w3s5l6/vrs-frontend:latest
         ports:
         - containerPort: 80
         imagePullPolicy: Always

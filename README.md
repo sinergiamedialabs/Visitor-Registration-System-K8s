@@ -18,7 +18,7 @@
 1. Now got to Addons Tab > Get More Addons and install **Amazon EFS CSI Driver**. This is needed for using EFS volume for persistent storage in PostgresDB service.
 1. Create an EFS volume in AWS and make a note of the EFS Volume ID. Also modify the security group to allow connection from the node groups to EFS volume on port 2049.
 1. Create a PostgresDB service with Persistent Volume Claim (PVC) using EFS volume.
-1. 
+
 
 #### Deployment
 

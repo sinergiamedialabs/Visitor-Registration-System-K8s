@@ -22,7 +22,7 @@
 
 #### Deployment
 
-Clone the repo. Note that, you may need to modify the credentials as per your requirement. This changes must be made in the following files
+Clone the repo to your local machine where you have configured AWS CLI and `kubectl`. Note that, you may need to modify the credentials as per your requirement. This changes must be made in the following files
 
     - efs-pv.yaml
     - java-app-deployment.yaml
@@ -70,4 +70,13 @@ Once thsi is done, we can go ahead provisioning EKS pods. Run the following comm
     ```bash
     kubectl apply -f frontend-service.yaml
     ```
+
+After the completion of the above commands you can verify the status by following commands
+
+    ```bash
+    kubectl get deployments
+    kubectl get po
+    kubectl get svc
+    ```
+
 Once this is complete, you should have the service up and running. To access this application you can either call the frontend app Load balancer endpoint directly. You can also point your domain to this loadbalancer to get the service.
